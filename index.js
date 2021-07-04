@@ -28,7 +28,7 @@ app.use(function (req, res, next) {
 });
 
 app.listen (
-    PORT,
+    process.env.PORT || PORT,
     () => console.log(`server running!`)
 )
 
